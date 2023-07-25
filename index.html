@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HiHello Calculator</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./public/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.7.2/math.min.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <div class="row header">
+    
+            <div class="col-md-8">
+              <p></p>
+            </div>
+            
+          </div>
+          <div class="row textbox">
+            <div class="col-md-12 padding-reset">
+              <input type="text" name="input" value="" id="input" placeholder="Enter some values and calculate!">
+            </div>
+          </div>
+          <div class="row textbox">
+            <div class="col-md-12 padding-reset">
+              <input type="text" name="output" value="" id="output" value="0" placeholder="0" readonly>
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="copy" value="Copy result into input field" id="copy">
+            </div>
+          </div>
+          <div class="row commonbutton">
+            <div class="col-md-2">
+              <input type="submit" name="sqrt" value="&#8730;" id="sqrt">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="nthroot" value="n&#8730;" id="nthroot">
+            </div>
+            <div class="col-md-2">
+              <input type="submit" name="leftPar" value="(" id="leftPar">
+            </div>
+            <div class="col-md-2">
+              <input type="submit" name="rightPar" value=")" id="rightPar">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="pct" value="%" id="pct">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="7" value="7" id="7">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="8" value="8" id="8">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="9" value="9" id="9">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="divide" value="/" id="divide">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="4" value="4" id="4">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="5" value="5" id="5">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="6" value="6" id="6">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="times" value="X" id="times">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="1" value="1" id="1">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="2" value="2" id="2">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="3" value="3" id="3">
+            </div>
+            <div class="col-md-3">
+              <input type="submit" name="minus" value="-" id="minus">
+            </div>
+          </div> 
+          <div class="row conflict">
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-4">
+                  <input type="submit" name="0" value="0" id="0">
+                </div>
+                <div class="col-md-4">
+                  <input type="submit" name="decPt" value="." id="decPt">
+                </div>
+                <div class="col-md-4">
+                    <input type="submit" name="pi" value="&#x03C0" id="pi">
+                </div>
+                <div class="col-md-2">
+                    <input type="submit" name="backspace" value="<-" id="backspace">
+                </div>
+                <div class="col-md-4">
+                  <input type="submit" name="delete" value="Clear" id="del">
+                </div>
+                <div class="col-md-6">
+                  <input type="submit" name="equal" value="=" id="equal">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+                <input type="submit" name="plus" value="+" id="plus">
+            </div>
+            <div class="col-md-3">
+                <input type="submit" name="squared" value="^" id="squared">
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+
+
+  </body>
+</html>
